@@ -1,4 +1,4 @@
-function find() {
+function clearNumber() {
     let limitArray = Number(prompt("Import limit Array"));
     let number, index = 0, count = 0, value, flag = true;
     let arrayNumber = [];
@@ -22,6 +22,6 @@ function find() {
     }
     if (flag == false) {
         arrayNumber.splice(index, 1);
-        alert(arrayNumber);
+        alert('Array after clear number '+arrayNumber);
     }
 }
