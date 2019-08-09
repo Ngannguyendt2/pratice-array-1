@@ -6,10 +6,17 @@ function sortReduction() {
         number = Number(prompt("Import number"));
         arrayNumber.push(number);
     }
-
-    arrayNumber.sort(function (a, b) {
-        return b - a
-    });
+ let temp;
+    for(let i=0;i<arrayNumber.length-1;i++)
+    {
+        for(let j=i+1;j<arrayNumber.length;j++)
+        {
+            temp=arrayNumber[i];
+            arrayNumber[i]=arrayNumber[j];
+            arrayNumber[j]=temp;
+        }
+    }
     alert(arrayNumber);
+
 
 }
