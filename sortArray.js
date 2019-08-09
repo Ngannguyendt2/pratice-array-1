@@ -2,6 +2,7 @@ function sort() {
     let arrayNumber=[];
     let number;
     let temp;
+
     for (let i = 0; i < 5; i++) {
         number = Number(prompt("Import number"));
         arrayNumber.push(number);
